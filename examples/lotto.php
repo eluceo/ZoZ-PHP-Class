@@ -14,6 +14,7 @@ function createNumbers()
     for ($i = 1; $i <= 6; $i++) {
         $numbers[$i] = $zoz->getOneElement();
     }
+    sort($numbers);
 
     $numbers['Superzahl'] = $zoz->getOneElement();
 
