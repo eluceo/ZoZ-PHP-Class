@@ -31,7 +31,13 @@ class Zoz
      */
     public function setPool($pool)
     {
-        $this->pool = $pool;
+        $this->pool = array();
+
+        $i = 0;
+        foreach($pool as $element) {
+            $this->pool[$i++] = $element;
+        }
+
         $this->n = count($this->pool);
         $this->reShufflePool();
     }
